@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <style>
         *{
             margin: 0;
@@ -28,6 +31,9 @@
             left: 30px;
             top: 50px;
         }
+
+
+
         #red{
             background-image: url(https://w7.pngwing.com/pngs/84/750/png-transparent-pokemon-pokemon-ball-free-graphics-red-thumbnail.png);
             background-size: 100%;
@@ -48,8 +54,14 @@
             top: 800px;
         }
 
+
+
+        
+
+
     </style>
 </head>
+
 <body>
     <div id="root">
         <div id="BG" src="./BG.png" alt="배경 이미지"> 
@@ -78,5 +90,26 @@
         </div>
 
     </div>
+
+
+    <script>
+        let mon = document.getElementById("mon");
+        let red = document.getElementById("red");
+        let blue = document.getElementById("blue");
+    
+
+        blue.addEventListener("click", function(){
+            let x =  Math.floor(Math.random() * 100);
+            red.textContent = x + "의 확률로 흭득하였다!"
+        })
+
+
+        // const { randomPokeImg } = require("./index");
+        // let img = randomPokeImg();
+        // console.log(img);
+
+
+    </script>
 </body>
+
 </html>
